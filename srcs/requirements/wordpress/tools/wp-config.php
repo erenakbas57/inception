@@ -1,21 +1,9 @@
 <?php
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
 define( 'DB_NAME', 'wordpress' );
-
-/** Database username */
 define( 'DB_USER', 'makbas' );
-
-/** Database password */
 define( 'DB_PASSWORD', '1234' );
-
-/** Database hostname */
 define( 'DB_HOST', 'mariadb' );
-
-/** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
-
-/** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
 
@@ -28,27 +16,12 @@ define('SECURE_AUTH_SALT', '%uHMhw~C/!0L3h9emJ9YkMER{Ua?k%8/|ZNce!5<XM6?Q+)^v6ex
 define('LOGGED_IN_SALT',   'nD*TTw#tk+uO{@iZ+YOHN`&*kuU@NMVSk/419Jr,,%Dfl-g?YdAi;` vW3N1FPs/');
 define('NONCE_SALT',       '+f=j&zTc0Pv8#JZKbQ96S1U!& <_tuapL!C9n_^Yy&$2Q*,,`{x2~l.?q#ZScOF+');
 
-/**#@-*/
-
-/**
- * WordPress database table prefix.
- *
- * You can have multiple installations in one database if you give each
- * a unique prefix. Only numbers, letters, and underscores please!
- */
 $table_prefix = 'wp_';
 
 define( 'WP_DEBUG', false );
 
-/* Add any custom values between this line and the "stop editing" line. */
-
-
-/* That's all, stop editing! Happy publishing. */
-
-/** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', '/var/www/html/wordpress' );
 }
 
-/** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
